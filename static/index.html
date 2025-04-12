@@ -3,19 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Chat</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.8.1/socket.io.min.js" integrity="sha384-mkQ3/7FUtcGyoppY6bz/PORYoGqOl7/aSUMn2ymDOJcapfS6PHqxhRTMh1RR0Q6+" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1 class="header">Hello my name is Gustavo</h1>
-    <ul id="messages">
-        <li>Test message</li>
-        <li>Hello</li>
-    </ul>
-    <form id="form">
-        <input type="text" id="input" placeholder="Enter message...">
-        <input type="submit" class="submit" value="Send">
-    </form>
+    <div class="chat-container">
+        <div class="header">Message</div>
+        <ul id="messages">
+            <li class="message">My name is Gustavo</li>
+            <li class="message">But u can call me Gus</li>
+        </ul>
+        <form id="form">
+            <input type="text" id="input" placeholder="Enter message..." autocomplete="off">
+            <input type="submit" class="submit" value="Send">
+        </form>
+    </div>
 </body>
 </html>

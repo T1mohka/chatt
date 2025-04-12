@@ -4,69 +4,84 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(248, 239, 229);
-}
-
-main{
-    position: relative;
-    height: 100vh;
-}
-
-.header{
-    position: fixed;
-    height: 5rem;
-    text-align: center;
-    width: 100%;
-    border-color: blue;
-    font-size: 2rem;
-    color: white;
-    padding: 1.5rem;
-}
-
-#form{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+body {
+    font-family: 'Roboto', sans-serif;
+    background: radial-gradient(circle,rgba(209, 159, 65, 1) 0%, rgba(222, 173, 100, 1) 50%, rgba(237, 183, 83, 1) 100%);
     display: flex;
-
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-#input{
-    width: 100%;
-    height: 4.5rem;
-    padding: 1rem;
-    font-size:  1.5rem;
-
-}
-
-.submit{
-    border-color:saddlebrown;
-    color: wheat;
-    padding: 0 2rem;
-    font-weight: bold;
-    font-size: 1.5rem;
-    border: 0;
-}
-
-ul{
-    list-style: none;
-    padding: 5rem 0;
+.chat-container {
+    width: 600px;
+    height: 600px;
+    border: 3px solid rgb(73, 46, 9);
+    border-radius: 25px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+    background-color: rgb(255, 241, 160);
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-
 }
 
-li{
-    border-color: rgb(118, 100, 74);
-    border-radius: 1rem;
+.header {
+    background-color: #693415;
     color: white;
-    padding: 1rem;
-    font-size: 1.5rem;
-    margin: 0.5rem;
+    text-align: center;
+    padding: 30px;
+    font-size: 36px;
+    font-weight: bold;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
-#messages{
-    padding: 5rem 0;
+#messages {
+    flex: 1;
+    list-style: none;
+    margin: 0;
+    padding: 30px;
+    overflow-y: auto;
+    font-size: 24px;
+}
+
+li {
+    background-color: #ba7321;
+    color: white;
+    padding: 18px 24px;
+    border-radius: 24px;
+    margin-bottom: 20px;
+    max-width: 80%;
+    word-wrap: break-word;
+}
+
+#form {
+    display: flex;
+    border-top: 2px solid #ddd;
+}
+
+#input {
+    flex: 1;
+    padding: 20px;
+    font-size: 22px;
+    border: none;
+    border-bottom-left-radius: 20px;
+    outline: none;
+}
+
+.submit {
+    background-color: #c89e54;
+    color: white;
+    border: none;
+    padding: 20px 40px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom-right-radius: 20px;
+    transition: background-color 0.3s;
+}
+
+.submit:hover {
+    background-color: #693415;
 }
