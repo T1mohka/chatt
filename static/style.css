@@ -1,3 +1,7 @@
+:root{
+    --color-block:
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,7 +21,7 @@ body {
 .chat-container {
     width: 600px;
     height: 600px;
-    border: 3px solid rgb(73, 46, 9);
+    border: 3px solid  #693415;
     border-radius: 25px;
     box-shadow: 0 0 30px rgba(0,0,0,0.2);
     background-color: rgb(255, 241, 160);
@@ -56,7 +60,7 @@ li {
     word-wrap: break-word;
 }
 
-#form {
+#form, #registerform {
     display: flex;
     border-top: 2px solid #ddd;
 }
@@ -85,3 +89,89 @@ li {
 .submit:hover {
     background-color: #693415;
 }
+
+
+.sbmt {
+    background-color: #693415;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px; 
+    transition: background-color 0.3s;
+    margin-top: 30px;
+    width: 100%;
+    align-self: center;
+}
+
+
+.sbmt1 {
+    background-color: #693415;
+    color: white;
+    border: none;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s;
+    margin-top: 70px;
+    width: 100%;
+    align-self: center;
+}
+
+.link-button {
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    transition: color 0.3s ease;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.link-button:hover {
+    color: #aaa;
+}
+
+
+.sbmt:hover {
+    background-color: #552910;
+}
+
+#login, #password, #confirmPassword{
+    border-radius: 20px; 
+    font-size: 17px; 
+    padding: 17px;
+    margin: 15px;
+    width: 75vh;
+    display: flex;
+}
+
+.logout-button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background-color: #ba7321;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c89e54;
+}
+
+
+
